@@ -13,6 +13,7 @@ const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
 });
 const db = {};
 db.Sequelize = Sequelize;
+db.sequelize = sequelize;
 
 // define semua models yang ada pada aplikasi
 db.quizzes = require('./quiz')(sequelize, Sequelize);

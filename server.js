@@ -13,7 +13,7 @@ const db = require('./models');
 db.sequelize.sync();
 
 app.get('/', (req, res) => {
-  res.send('Quiz ExpressJS API by Peika');
+  res.send('Quiz ExpressJS API by Arya');
 });
 
 app.use('/api/quizzes', quizRoute);
